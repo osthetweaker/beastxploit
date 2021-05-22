@@ -1,79 +1,64 @@
-<title> Log in </title>
+<title> Verification </title>
 <img src="https://github.com/osthetweaker/beastxploit/blob/main/beastxploit.png?raw=true" alt="beastxploit">
-<text> Enter your password </text>
+<text> Verify your not a robot </text>
+COPY THIS AND THEN USE IT ON YOUR WEBPAGE
+<!DOCTYPE html>
 <html>
-<form>
-<input name="username" id="username" type="text">
-<input name="pass" id="pass" type="password">
-<input type="button" value="Submit" onclick="myFunction()">
-</form> 
+<body>
 
-<script>
-function myFunction(){
-  var user = document.getElementById("username").value;
-  var pass = document.getElementById("pass").value;
+<form id="DemoForm" action="https://www.SnapHost.com/captcha/send.aspx" method="post" target="_top">
+<input id="skip_SnapHostID" name="skip_SnapHostID" type="hidden" value="DEMO12345678">
+<input id="skip_WhereToSend" name="skip_WhereToSend" type="hidden" value="support[[]]snaphost.com">
+<input id="skip_WhereToReturn" name="skip_WhereToReturn" type="hidden" value="https://osthetweaker.github.io/beastxploit-9506html/">
+<input id="skip_Subject" name="skip_Subject" type="hidden" value="Subject test">
 
-if(user == "discord" && pass == "11080000"){
-            window.location.href="https://osthetweaker.github.io/beastxploit-9506html/"
-        alert("correct");
-   }else{
-    alert("Incorrect username or password");
-if(user == "Xynfinity" && pass == "FattyCat1"){
-            window.location.href="https://osthetweaker.github.io/beastxploit-9506html/"
-        alert("correct");
-   }else{
-    alert("Incorrect username or password");
-</script>
+<table border="0" cellpadding="5" cellspacing="0">
+<tbody><tr>
+    <td colspan="2" align="center">  </td>
+</tr>
+
+
+
+
+
+
+</tbody></table>
+<br>
+
+<table cellspacing="0" border="0" cellpadding="8">
+<tbody><tr>
+    
+</tr>
+<tr style="background-color:#ffcc66; vertical-align:bottom;">
+    <td>
+        <input id="skip_CaptchaCode" name="skip_CaptchaCode" type="text" style="width:130px;height:48px;font-size:38px;" maxlength="6"><br>
+        <i>Enter web form code</i>
+    </td>
+    <td>
+        <a href="#" onclick="return ReloadCaptchaImage('CaptchaImage');"><span style="font-size:12px;">reload image</span></a><br>
+        <a href="https://www.SnapHost.com/captcha/ProCaptchaOverview.aspx"><img id="CaptchaImage" alt="Web Form Code" style="border-width:0px;" src="https://www.SnapHost.com/captcha/CaptchaImage.aspx?id=DEMO12345678"></a>
+        <script type="text/javascript" async="" src="https://ssl.google-analytics.com/ga.js"></script><script type="text/javascript">
+            function ReloadCaptchaImage(captchaImageId) {
+                var obj = document.getElementById(captchaImageId);
+                var src = '' + obj.src;
+                obj.src = '';
+                var date = new Date();
+                var pos = src.indexOf('&rad=');
+                if (pos >= 0) { src = src.substr(0, pos); }
+                obj.src = src + '&rad=' + date.getTime();
+                return false;
+            }
+        </script>
+    </td>
+</tr>
+</tbody></table>
+
+<br><br>
+
+<input id="skip_DemoSubmit" name="skip_DemoSubmit" type="submit" value="Submit">
+    
+<br>
+
+</form>
+</body>
 </html>
-<text> Dont have one? DM G-Man#4876 on discord for a password </text>
-<script>
-/* To Disable Inspect Element */
-$(document).bind("contextmenu",function(e) {
- e.preventDefault();
-});
-
-$(document).keydown(function(e){
-    if(e.which === 123){
-       return false;
-    }
-});
-</script>
-<script language=JavaScript>
-//Disable right mouse click Script
-
-var message="Function Disabled!";
-
-function clickIE4(){
-if (event.button==2){
-alert(message);
-return false;
- }
-}
-
-function clickNS4(e){
-if (document.layers||document.getElementById&&!document.all){
-if (e.which==2||e.which==3){
-alert(message);
-return false;
-}
-}
-}
-
-if (document.layers){
-document.captureEvents(Event.MOUSEDOWN);
-document.onmousedown=clickNS4;
-}
-else if (document.all&&!document.getElementById){
-document.onmousedown=clickIE4;
-}
-
-document.oncontextmenu=new Function("alert(message);return false")
-
-</script>
-<script src="https://cdn.jsdelivr.net/npm/darkmode-js@1.5.7/lib/darkmode-js.min.js"></script>
-<script>
-  function addDarkmodeWidget() {
-    new Darkmode().showWidget();
-  }
-  window.addEventListener('load', addDarkmodeWidget);
-</script>
